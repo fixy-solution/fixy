@@ -212,7 +212,7 @@
                                 </div>
                             </div>
 
-                            <form class="booking-form" id="bookingForm">
+                            <form class="booking-form" id="bookingForm" novalidate>
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="fullName">Full Name *</label>
@@ -246,8 +246,9 @@
                                 </div>
 
                                 <label class="checkbox-label">
-                                    <input type="checkbox" name="agree" required>
+                                    <input type="checkbox" id="agree" name="agree" required>
                                     I agree to the terms of service and privacy policy
+                                    <span class="error-message"></span>
                                 </label>
 
                                 <label class="checkbox-label">

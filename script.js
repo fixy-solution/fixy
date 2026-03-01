@@ -61,7 +61,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const bookingSteps = document.querySelectorAll('.booking-step');
 const bookingFormSteps = document.querySelectorAll('.booking-form-step');
 const serviceOptions = document.querySelectorAll('.service-option');
-const workerCards = document.querySelectorAll('.worker-card');
+const workerCards = document.querySelectorAll('.worker-card-blog');
 const nextStepBtns = document.querySelectorAll('.next-step');
 const backStepBtns = document.querySelectorAll('.back-step');
 const selectWorkerBtns = document.querySelectorAll('.select-worker');
@@ -86,7 +86,7 @@ serviceOptions.forEach(option => {
 selectWorkerBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         workerCards.forEach(card => card.classList.remove('selected'));
-        btn.closest('.worker-card').classList.add('selected');
+        btn.closest('.worker-card-blog').classList.add('selected');
         selectedWorker = btn.dataset.worker;
         
         // Enable next button
@@ -114,7 +114,7 @@ nextStepBtns.forEach(btn => {
             // Update summary on step 3
             if (nextStepNum === 3) {
                 document.getElementById('summary-service').textContent = selectedService.charAt(0).toUpperCase() + selectedService.slice(1);
-                const workerName = document.querySelector(`.worker-card.selected .worker-name`);
+                const workerName = document.querySelector(`.worker-card-blog.selected h3`);
                 document.getElementById('summary-worker').textContent = workerName ? workerName.textContent : 'Selected Professional';
             }
             
@@ -224,6 +224,7 @@ if (bookingForm) {
 
     function showBookingError(fieldName, message) {
         const field = document.getElementById(fieldName);
+        if (!field) return;
         const errorElement = field.parentElement.querySelector('.error-message');
         if (errorElement) {
             field.classList.add('error');
@@ -234,6 +235,7 @@ if (bookingForm) {
 
     function clearBookingError(fieldName) {
         const field = document.getElementById(fieldName);
+        if (!field) return;
         const errorElement = field.parentElement.querySelector('.error-message');
         if (errorElement) {
             field.classList.remove('error');

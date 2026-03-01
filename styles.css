@@ -6192,6 +6192,8 @@ address {
     margin: 0;
 }
 
+
+
 /* Responsive - Timeline */
 @media (max-width: 1024px) {
     .timeline-alternating::before {
@@ -6353,4 +6355,23 @@ address {
     .journey-time {
         font-size: 0.85rem;
     }
+}
+
+/* Hide error messages by default */
+.error-message {
+    display: none;
+    color: #ef4444; /* Red color for errors */
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+/* Show the error message when the JS adds the 'show' class */
+.error-message.show {
+    display: block;
+}
+
+/* Optional: Add a red border to the input with an error */
+input.error, textarea.error {
+    border-color: #ef4444;
+    outline-color: #ef4444;
 }
