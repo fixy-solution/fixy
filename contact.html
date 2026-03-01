@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Fixy Solution - Get in touch with our support team">
+    <title>Contact Us - Fixy Solution</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="index.html"><img src="logo.png" alt="Fixy Solution" class="logo-img"></a>
+                    </div>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="services.html" class="nav-link">Services</a></li>
+                        <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                    <a href="contact.html"><button class="btn btn-primary">Get Started</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Blog Hero -->
+    <section class="blog-hero">
+        <div class="container">
+            <div class="blog-hero-content">
+                <span class="blog-category">Get in Touch</span>
+                <h1>Book Your Service</h1>
+                <p>Easy booking process. Select your service, choose a professional, and book your appointment in just a few minutes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container blog-container">
+        <div class="blog-grid">
+            <!-- Main Content Area -->
+            <main class="blog-main">
+                <!-- Booking Wizard -->
+                <section class="blog-section contact-booking">
+                    <div class="booking-wizard">
+                        <!-- Step Indicator -->
+                        <div class="booking-steps-horizontal">
+                            <div class="booking-step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-title">Service</div>
+                            </div>
+                            <div class="step-connector"></div>
+                            <div class="booking-step" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-title">Professional</div>
+                            </div>
+                            <div class="step-connector"></div>
+                            <div class="booking-step" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-title">Confirm</div>
+                            </div>
+                        </div>
+
+                        <!-- Step 1: Choose Service -->
+                        <div class="booking-form-step active" id="step-1">
+                            <h2>Step 1: Choose Your Service</h2>
+                            <p class="step-description">Select the type of home repair service you need</p>
+                            
+                            <div class="services-selection-blog">
+                                <div class="service-option" data-service="plumbing">
+                                    <div class="service-option-icon">🚰</div>
+                                    <h3>Plumbing</h3>
+                                    <p>Leaks, fixtures, repairs</p>
+                                </div>
+                                <div class="service-option" data-service="electrical">
+                                    <div class="service-option-icon">⚡</div>
+                                    <h3>Electrical</h3>
+                                    <p>Wiring, outlets, safety</p>
+                                </div>
+                                <div class="service-option" data-service="carpentry">
+                                    <div class="service-option-icon">🏠</div>
+                                    <h3>Carpentry</h3>
+                                    <p>Doors, cabinets, trim</p>
+                                </div>
+                                <div class="service-option" data-service="hvac">
+                                    <div class="service-option-icon">❄️</div>
+                                    <h3>HVAC</h3>
+                                    <p>Heating, cooling, comfort</p>
+                                </div>
+                                <div class="service-option" data-service="handyman">
+                                    <div class="service-option-icon">🔨</div>
+                                    <h3>Handyman</h3>
+                                    <p>General repairs & maintenance</p>
+                                </div>
+                                <div class="service-option" data-service="other">
+                                    <div class="service-option-icon">⭐</div>
+                                    <h3>Other</h3>
+                                    <p>Special or custom services</p>
+                                </div>
+                            </div>
+
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-primary btn-lg next-step" disabled>Continue to Professionals</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Select Professional -->
+                        <div class="booking-form-step" id="step-2">
+                            <h2>Step 2: Select a Local Professional</h2>
+                            <p class="step-description">Browse and choose from verified professionals in your area</p>
+                            
+                            <div class="workers-selection-blog">
+                                <div class="worker-card-blog">
+                                    <div class="worker-image">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="John Smith">
+                                    </div>
+                                    <div class="worker-info-blog">
+                                        <h3>John Smith</h3>
+                                        <p class="worker-title">Professional Plumber</p>
+                                        <div class="worker-details">
+                                            <span>📍 2 miles away</span>
+                                            <span>⏱️ Available today</span>
+                                        </div>
+                                        <p class="worker-bio">Licensed and insured with 15+ years of experience in residential plumbing.</p>
+                                        <p class="worker-price">Starting at $85/hour</p>
+                                        <button type="button" class="btn btn-primary btn-sm select-worker" data-worker="john">Select</button>
+                                    </div>
+                                </div>
+
+                                <div class="worker-card-blog">
+                                    <div class="worker-image">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=faces" alt="James Wilson">
+                                    </div>
+                                    <div class="worker-info-blog">
+                                        <h3>James Wilson</h3>
+                                        <p class="worker-title">Expert Electrician</p>
+                                        <div class="worker-details">
+                                            <span>📍 3 miles away</span>
+                                            <span>⏱️ Available tomorrow</span>
+                                        </div>
+                                        <p class="worker-bio">Certified electrician specializing in residential installations and troubleshooting.</p>
+                                        <p class="worker-price">Starting at $95/hour</p>
+                                        <button type="button" class="btn btn-primary btn-sm select-worker" data-worker="james">Select</button>
+                                    </div>
+                                </div>
+
+                                <div class="worker-card-blog">
+                                    <div class="worker-image">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces" alt="David Brown">
+                                    </div>
+                                    <div class="worker-info-blog">
+                                        <h3>David Brown</h3>
+                                        <p class="worker-title">Master Carpenter</p>
+                                        <div class="worker-details">
+                                            <span>📍 1 mile away</span>
+                                            <span>⏱️ Available today</span>
+                                        </div>
+                                        <p class="worker-bio">Skilled carpenter with expertise in custom woodworking and home modifications.</p>
+                                        <p class="worker-price">Starting at $75/hour</p>
+                                        <button type="button" class="btn btn-primary btn-sm select-worker" data-worker="david">Select</button>
+                                    </div>
+                                </div>
+
+                                <div class="worker-card-blog">
+                                    <div class="worker-image">
+                                        <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop&crop=faces" alt="Robert Davis">
+                                    </div>
+                                    <div class="worker-info-blog">
+                                        <h3>Robert Davis</h3>
+                                        <p class="worker-title">HVAC Specialist</p>
+                                        <div class="worker-details">
+                                            <span>📍 1.5 miles away</span>
+                                            <span>⏱️ Available today</span>
+                                        </div>
+                                        <p class="worker-bio">Certified HVAC technician with 12+ years of experience in heating and cooling systems.</p>
+                                        <p class="worker-price">Starting at $90/hour</p>
+                                        <button type="button" class="btn btn-primary btn-sm select-worker" data-worker="robert">Select</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-outline back-step">Back</button>
+                                <button type="button" class="btn btn-primary btn-lg next-step" disabled>Continue to Booking</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Book & Confirm -->
+                        <div class="booking-form-step" id="step-3">
+                            <h2>Step 3: Book & Get It Fixed</h2>
+                            <p class="step-description">Complete your booking and schedule your service</p>
+                            
+                            <div class="booking-summary-blog">
+                                <div class="summary-item">
+                                    <span class="summary-label">Selected Service:</span>
+                                    <span class="summary-value" id="summary-service">-</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Selected Professional:</span>
+                                    <span class="summary-value" id="summary-worker">-</span>
+                                </div>
+                            </div>
+
+                            <form class="booking-form" id="bookingForm">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullName">Full Name *</label>
+                                        <input type="text" id="fullName" name="fullName" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="appointmentDate">Preferred Date *</label>
+                                        <input type="date" id="appointmentDate" name="appointmentDate" required>
+                                        <span class="error-message"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="description">Problem Description *</label>
+                                    <textarea id="description" name="description" rows="4" placeholder="Describe the issue in detail..." required></textarea>
+                                    <span class="error-message"></span>
+                                </div>
+
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="agree" required>
+                                    I agree to the terms of service and privacy policy
+                                </label>
+
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="notifications" checked>
+                                    Send me updates about my booking via SMS and email
+                                </label>
+
+                                <div class="step-actions">
+                                    <button type="button" class="btn btn-outline back-step">Back</button>
+                                    <button type="submit" class="btn btn-primary btn-lg">Complete Booking</button>
+                                </div>
+
+                                <p class="form-success" style="display: none; margin-top: 1rem; padding: 1rem; background: #DCF6E9; color: #10B981; border-radius: 8px; text-align: center; font-weight: 600;">🎉 Booking confirmed! Your professional will contact you shortly with arrival details.</p>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- FAQ -->
+                <section class="blog-section">
+                    <h2 class="section-title">Common Questions</h2>
+                    <div class="faq-blog">
+                        <div class="faq-blog-item">
+                            <h4>How do I book a service?</h4>
+                            <p>Browse our services, select what you need, choose a professional, and book an appointment. It takes just a few minutes!</p>
+                        </div>
+                        <div class="faq-blog-item">
+                            <h4>What areas do you serve?</h4>
+                            <p>We serve major metropolitan areas across the country. Check our services page to see if we're available in your location.</p>
+                        </div>
+                        <div class="faq-blog-item">
+                            <h4>How much do services cost?</h4>
+                            <p>Pricing varies based on the service and complexity. You'll see transparent pricing before booking any service.</p>
+                        </div>
+                        <div class="faq-blog-item">
+                            <h4>Can I cancel my booking?</h4>
+                            <p>Yes, you can cancel up to 24 hours before your appointment without any charges.</p>
+                        </div>
+                        <div class="faq-blog-item">
+                            <h4>Are professionals background-checked?</h4>
+                            <p>Absolutely. All professionals are verified, licensed, insured, and background-checked.</p>
+                        </div>
+                        <div class="faq-blog-item">
+                            <h4>What if I'm not satisfied?</h4>
+                            <p>We offer a satisfaction guarantee. If you're unhappy, we'll work to make it right or provide a full refund.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- CTA -->
+                <section class="blog-cta-section">
+                    <h2>Start Your Booking</h2>
+                    <p>Select a service above to get started. It's quick, easy, and secure.</p>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <!-- Quick Links -->
+                <div class="sidebar-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Categories -->
+                <div class="sidebar-widget">
+                    <h3>Browse Services</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="services.html">Plumbing</a></li>
+                        <li><a href="services.html">Electrical</a></li>
+                        <li><a href="services.html">Carpentry</a></li>
+                        <li><a href="services.html">HVAC</a></li>
+                        <li><a href="services.html">Handyman</a></li>
+                        <li><a href="services.html">More Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Booking Info -->
+                <div class="sidebar-widget about-widget">
+                    <h3>Booking Info</h3>
+                    <p>Complete your booking above in 3 simple steps. It takes less than 20 minutes to schedule your service.</p>
+                </div>
+
+                <!-- Service Guarantees -->
+                <div class="sidebar-widget trust-widget">
+                    <h3>Our Guarantees</h3>
+                    <ul class="trust-list">
+                        <li>✓ Verified Professionals</li>
+                        <li>✓ Licensed & Insured</li>
+                        <li>✓ Fixed Pricing</li>
+                        <li>✓ Same-Day Service</li>
+                        <li>✓ 100% Satisfaction</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Fixy Solution</h4>
+                    <p>Smart home repairs, simplified.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">𝕏</a>
+                        <a href="#" title="Instagram">📷</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="how-it-works.html">How It Works</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="terms.html">Terms</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                        <li><a href="security.html">Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Fixy Solution. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
